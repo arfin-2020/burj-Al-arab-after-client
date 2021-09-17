@@ -7,6 +7,7 @@ import {
 import React, { useContext, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { UserContext } from '../../App';
+import Bookings from '../bookings/Bookings';
 
 const Book = () => {
     const { bedType } = useParams();
@@ -75,6 +76,7 @@ const Book = () => {
                     Primary
                 </Button>
             </MuiPickersUtilsProvider>
+            <Bookings/>
         </div>
     );
 };
